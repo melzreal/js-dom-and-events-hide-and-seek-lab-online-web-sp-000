@@ -8,9 +8,10 @@ function nestedTarget(){
 
 function increaseRankBy(n){
   let goodies = document.querySelectorAll('ul.ranked-list li');
-  for (const element of goodies) {
+
+  goodies.forEach(function(element) {
     goodies[element].innerHTML = parseInt(goodies[element].innerHTML) + n;
-    }
+  });
 }
 
 
